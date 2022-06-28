@@ -1,7 +1,7 @@
 export const Questions = [
     {
         id:1,
-        question:"375/15",
+        question:"x = 375/15",
         answerCorrect: 25,
         answer1: 20,
         answer2: 22,
@@ -12,7 +12,7 @@ export const Questions = [
     },
     {
         id:2,
-        question:"525/3",
+        question:"x = 525/3",
         answerCorrect: 175,
         answer1: 150,
         answer2: 170,
@@ -24,7 +24,7 @@ export const Questions = [
     },
     {
         id:3,
-        question:"318/3",
+        question:"x = 318/3",
         answerCorrect: 106,
         answer1: 106,
         answer2: 107,
@@ -35,7 +35,7 @@ export const Questions = [
     },
     {
         id:4,
-        question:"279/9",
+        question:"x = 279/9",
         answerCorrect: 31,
         answer1: 30,
         answer2: 31,
@@ -46,7 +46,7 @@ export const Questions = [
     },
     {
         id:5,
-        question:"231/7",
+        question:"x = 231/7",
         answerCorrect: 33,
         answer1: 33,
         answer2: 31,
