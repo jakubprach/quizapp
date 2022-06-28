@@ -3,7 +3,7 @@ import { Questions } from '../../data/Questions'
 import QuestionBox from '../QuestionBox/QuestionBox';
 import { useState } from 'react'
 export default function Quiz() {
-    //const [answered, setAnswered] = useState(0)
+    const [correct, setCorrect] = useState(0)
     const [current, setCurrent] = useState(1)
     return (
         Questions.map((question) => (
@@ -11,7 +11,9 @@ export default function Quiz() {
                 key = {question.id}
                 {...question}
                 current={current}
-                setCurrent = {setCurrent}
+                setCurrent={setCurrent}
+                correct = {correct}
+                setCorrect={setCorrect}
             />
     ))
 );
