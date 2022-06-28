@@ -3,6 +3,7 @@ import { useState } from 'react'
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './QuestionBox.css'
 
 export default function QuestionBox(props) {
 
@@ -48,11 +49,10 @@ export default function QuestionBox(props) {
               </h1>
               <div class="mt-[40px]">
                 <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                  <div
+                <div id ={props.idcss}
                     class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                    style={{ width: "45%" }}
                   >
-                    45%
+                    {props.barPercent}%
                   </div>
                 </div>
                 <div>
