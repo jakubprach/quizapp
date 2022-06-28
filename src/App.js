@@ -1,9 +1,10 @@
 import './App.css';
+import QuestionBox from './components/QuestionBox/QuestionBox';
 
 function App() {
   return (
     <div className="App">
-      <h1>eloo</h1>
+      <QuestionBox></QuestionBox>
     </div>
   );
 }
