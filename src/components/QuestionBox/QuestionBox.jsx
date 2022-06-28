@@ -6,9 +6,14 @@ export default function QuestionBox(props) {
 
     //let number = 0;
 
-    const checkAnswer = () => {
-        console.log('xD')
-        props.setCurrent(props.current + 1)
+    const checkAnswer = (answer) => {
+        if(answer == props.answerCorrect){
+            alert("good");
+            props.setCurrent(props.current + 1)
+        }
+        else{
+            alert("bad answer")
+        }
       }
 
     return (
@@ -30,13 +35,14 @@ export default function QuestionBox(props) {
                             </div>
                             <div class="mb-8">
                                 <button
-                                    onClick={checkAnswer}
+                                    id="btnA"
+                                    onClick={() => checkAnswer(props.answer1)}
                                     class="w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900"
                                 >
                                     A) {props.answer1}
                                 </button>
                                 <button
-                                    onClick={checkAnswer}
+                                    onClick={() => checkAnswer(props.answer2)}
                                     class="w-1/3 mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900"
                                 >
                                     B) {props.answer2}
@@ -45,13 +51,13 @@ export default function QuestionBox(props) {
 
                             <div class="mb-8">
                                 <button
-                                    onClick={checkAnswer}
+                                    onClick={() => checkAnswer(props.answer3)}
                                     class="w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900"
                                 >
                                     C) {props.answer3}
                                 </button>
                                 <button
-                                    onClick={checkAnswer}
+                                    onClick={() => checkAnswer(props.answer4)}
                                     class="w-1/3 mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900"
                                 >
                                     D) {props.answer4}
