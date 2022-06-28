@@ -38,7 +38,7 @@ const questions  = [
       }
 
   return (
-    <div className='mx-auto container mt-[40px] bg-[#e5e5e5] rounded-[30px]'>
+    <div className='mx-auto container mt-[40px] bg-[#e5e5e5] rounded-[30px] '>
         <div class="p-8"> 
             <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">{questions[number].question}</h1>
         <div class="mt-[40px]">   
@@ -60,7 +60,9 @@ const questions  = [
                     </button>
                     
                     <div className="submit">
-                        <button className=' mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full' type="submit">Potwierdź odpowiedź</button>
+                        <button className=' mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded' type="submit">
+                        Potwierdź odpowiedź
+                        </button>
                     </div>
                     </div>
         </div>
