@@ -1,9 +1,9 @@
-export const QuestionsHard = [
+export const Questions = [
     {
         id:1,
         question:"x+2=4",
         answerCorrect: 2,
-        answer1: 3333,
+        answer1: 11,
         answer2: 5,
         answer3: 2,
         answer4: 7,

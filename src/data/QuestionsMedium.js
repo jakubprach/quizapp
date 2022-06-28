@@ -1,4 +1,4 @@
-export const QuestionsHard = [
+export const Questions = [
     {
         id:1,
         question:"x+2=4",
