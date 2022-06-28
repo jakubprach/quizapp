@@ -1,10 +1,11 @@
 import './App.css';
-import QuestionBox from './components/QuestionBox/QuestionBox';
+
+import Quiz from './components/Quiz/Quiz';
 
 function App() {
   return (
     <div className="App">
-      <QuestionBox></QuestionBox>
+      <Quiz></Quiz>
     </div>
   );
 }
