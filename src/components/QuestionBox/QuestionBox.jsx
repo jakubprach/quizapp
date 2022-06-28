@@ -35,7 +35,7 @@ const questions  = [
 
   return (
     <div className='mx-auto container mt-[40px]'>
-        <h1>{questions[number].question}</h1>
+        <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">{questions[number].question}</h1>
         <div class="mt-[40px]">   
                 <div class="mb-8">
                     <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
