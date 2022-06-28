@@ -53,6 +53,10 @@ const questions  = [
                     <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     D) Odpowiedź D
                     </button>
+                    
+                    <div className="submit">
+                        <button className=' mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full' type="submit">Potwierdź odpowiedź</button>
+                    </div>
                     </div>
         </div>
     </div>
