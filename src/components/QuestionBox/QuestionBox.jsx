@@ -34,16 +34,8 @@ const questions  = [
     
 
   return (
-    <div className='container mt-[40px]'>
+    <div className='mx-auto container mt-[40px]'>
         <h1>{questions[number].question}</h1>
-        <div className="answer1">
-
-        </div>
-        <div className="answer2">
-
-        </div>
-        <div className="answer3">
-        </div>
         <div class="mt-[40px]">   
                 <div class="mb-8">
                     <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
