@@ -3,11 +3,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import Quiz from '../components/Quiz/Quiz_Math_Easy';
 import Navbar from '../components/navbar/navabar';
 
-export const Math_Medium = () => {
+export const Math_Hard = () => {
     return (
       <>
       <Navbar/>
-      <p>Route test - Math medium</p>
+      <p>Route test - Math hard</p>
         <div className="App">
           <Quiz></Quiz>
           <ToastContainer
