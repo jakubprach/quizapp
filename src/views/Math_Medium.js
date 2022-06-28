@@ -7,7 +7,6 @@ export const Math_Medium = () => {
     return (
       <>
       <Navbar/>
-      <p>Route test - Math medium</p>
         <div className="App">
           <Quiz></Quiz>
           <ToastContainer
