@@ -38,7 +38,7 @@ export const Questions = [
     },
     {
         id:5,
-        question:"15x=5",
+        question:"5x=15",
         answerCorrect: 3,
         answer1: 9,
         answer2: 18,
