@@ -39,19 +39,19 @@ const questions  = [
             <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">{questions[number].question}</h1>
         <div class="mt-[40px]">   
                 <div class="mb-8">
-                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button class="mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
                     A) Odpowiedź A
                     </button>
-                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
                     B) Odpowiedź B
                     </button>
                     </div>
 
                     <div class="mb-8">
-                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
                     C) Odpowiedź C
                     </button>
-                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
                     D) Odpowiedź D
                     </button>
                     
