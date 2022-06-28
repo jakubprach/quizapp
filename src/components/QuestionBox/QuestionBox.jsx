@@ -34,7 +34,7 @@ const questions  = [
     
 
   return (
-    <div className='container'>
+    <div className='container mt-[40px]'>
         <h1>{questions[number].question}</h1>
         <div className="answer1">
 
@@ -46,19 +46,19 @@ const questions  = [
         </div>
         <div class="mt-[40px]">   
                 <div class="mb-8">
-                    <button class="mr-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     A) Odpowiedź A
                     </button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     B) Odpowiedź B
                     </button>
                     </div>
 
                     <div class="mb-8">
-                    <button class="mr-8 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     C) Odpowiedź C
                     </button>
-                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     D) Odpowiedź D
                     </button>
                     </div>
