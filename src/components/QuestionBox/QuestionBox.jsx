@@ -7,9 +7,6 @@ import './QuestionBox.css'
 
 export default function QuestionBox(props) {
 
-
-    //let number = 0;
-
     const checkAnswer = async (answer) => {
         if(answer == props.answerCorrect){
             toast.success('🦄 Wow so easy!', {
