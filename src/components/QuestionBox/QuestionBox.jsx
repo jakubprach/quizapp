@@ -38,26 +38,26 @@ const questions  = [
       }
 
   return (
-    <div className='mx-auto container mt-[40px] bg-[#e5e5e5] rounded-[30px] '>
+    <div className='mx-auto w-1/2 container mt-[40px] bg-[#e5e5e5] rounded-[30px] '>
         <div class="p-8"> 
             <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">{questions[number].question}</h1>
         <div class="mt-[40px]">   
                 <div class="mb-8">
-                    <button onClick={checkAnswer} class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    A) Odpowiedź A
-                    </button>
-                    <button onClick={checkAnswer} class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    B) Odpowiedź B
-                    </button>
-                    </div>
+                    <button onClick={checkAnswer} class="mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
+                     A) Odpowiedź A
+                     </button>
+                     <button onClick={checkAnswer}  class="mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
+                     B) Odpowiedź B
+                     </button>
+                     </div>
 
-                    <div class="mb-8">
-                    <button onClick={checkAnswer} class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    C) Odpowiedź C
-                    </button>
-                    <button onClick={checkAnswer} class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                    D) Odpowiedź D
-                    </button>
+                     <div class="mb-8">
+                     <button onClick={checkAnswer}  class="mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
+                     C) Odpowiedź C
+                     </button>
+                     <button onClick={checkAnswer}  class="mt-8 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900">
+                     D) Odpowiedź D
+                     </button>
                     
                     <div className="submit">
                         <button className=' mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded' type="submit">
