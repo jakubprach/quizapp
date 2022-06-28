@@ -1,9 +1,10 @@
 import React from 'react'
-import { Questions } from '../../data/Questions'
+import { Questions } from '../../data/QuestionsMedium'
 import QuestionBox from '../QuestionBox/QuestionBox';
 import { useState } from 'react'
+
 export default function Quiz() {
-    const [correct, setCorrect] = useState(0)
+    //const [answered, setAnswered] = useState(0)
     const [current, setCurrent] = useState(1)
     return (
         Questions.map((question) => (
@@ -11,9 +12,7 @@ export default function Quiz() {
                 key = {question.id}
                 {...question}
                 current={current}
-                setCurrent={setCurrent}
-                correct = {correct}
-                setCorrect={setCorrect}
+                setCurrent = {setCurrent}
             />
     ))
 );

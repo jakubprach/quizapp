@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './QuestionBox.css'
 
 export default function QuestionBox(props) {
 
@@ -59,29 +60,28 @@ export default function QuestionBox(props) {
               <h1 className="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">
                 {props.question}
               </h1>
-              <div className="mt-[40px]">
-                <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700">
-                  <div
-                    className="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                    style={{ width: "45%" }}
+              <div class="mt-[40px]">
+                <div class="w-full bg-[#C3CAD5] rounded-full dark:bg-gray-700">
+                <div id ={props.idcss}
+                    class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                   >
-                    45%
+                    {props.barPercent}%
                   </div>
                 </div>
-                <div className="mb-8">
+                <div>
                   <button
                     id="A"
                                     onClick={() => { setChecked('A'); checkAnswer(props.answer1); }}
                     className={bttnClass('A')}
                   >
-                    A) {props.answer1}
+                    A) x = {props.answer1}
                   </button>
                   <button
                   id="B"
                                     onClick={() => { setChecked('B'); checkAnswer(props.answer2); }}
                     className={bttnClass('B')}
                   >
-                    B) {props.answer2}
+                    B) x = {props.answer2}
                   </button>
                 </div>
 
@@ -91,24 +91,16 @@ export default function QuestionBox(props) {
                                     onClick={() => { setChecked('C');  checkAnswer(props.answer3);}}
                     className={bttnClass('C')}
                   >
-                    C) {props.answer3}
+                    C) x = {props.answer3}
                   </button>
                   <button
                   id="D"
                                     onClick={() => { setChecked('D');  checkAnswer(props.answer4);}}
                     className={bttnClass('D')}
                   >
-                    D) {props.answer4}
+                    D) x = {props.answer4}
                   </button>
 
-                  <div className="submit">
-                    <button
-                      className=" mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                      type="submit"
-                    >
-                      Potwierdź odpowiedź
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
