@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import Quiz from '../components/Quiz/Quiz_Math_Easy';
+import Quiz from '../components/Quiz/Quiz_Math_Hard';
 import Navbar from '../components/navbar/navabar';
 
 export const Math_Hard = () => {
