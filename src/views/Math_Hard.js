@@ -7,7 +7,6 @@ export const Math_Hard = () => {
     return (
       <>
       <Navbar/>
-      <p>Route test - Math hard</p>
         <div className="App">
           <Quiz></Quiz>
           <ToastContainer

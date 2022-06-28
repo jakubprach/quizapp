@@ -45,7 +45,7 @@ export default function QuestionBox(props) {
                 {props.question}
               </h1>
               <div class="mt-[40px]">
-                <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+                <div class="w-full bg-[#C3CAD5] rounded-full dark:bg-gray-700">
                 <div id ={props.idcss}
                     class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                   >
