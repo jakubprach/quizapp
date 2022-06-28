@@ -31,7 +31,11 @@ const questions  = [
     ]
 
     let number = 0;
-    
+
+
+    const checkAnswer = () => {
+        console.log('xD')
+      }
 
   return (
     <div className='mx-auto container mt-[40px] bg-[#e5e5e5] rounded-[30px]'>
@@ -39,19 +43,19 @@ const questions  = [
             <h1 class="font-medium leading-tight text-5xl mt-0 mb-2 text-black-600">{questions[number].question}</h1>
         <div class="mt-[40px]">   
                 <div class="mb-8">
-                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={checkAnswer} class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     A) Odpowiedź A
                     </button>
-                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={checkAnswer} class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     B) Odpowiedź B
                     </button>
                     </div>
 
                     <div class="mb-8">
-                    <button class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={checkAnswer} class="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     C) Odpowiedź C
                     </button>
-                    <button class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <button onClick={checkAnswer} class="mt-8 mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     D) Odpowiedź D
                     </button>
                     
