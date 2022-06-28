@@ -1,18 +1,38 @@
-import React from 'react'
 import 'flowbite';
 import { useState } from 'react'
+import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default function QuestionBox(props) {
 
 
     //let number = 0;
 
-    const checkAnswer = (answer) => {
+    const checkAnswer = async (answer) => {
         if(answer == props.answerCorrect){
-            alert("good");
+            toast.success('🦄 Wow so easy!', {
+                position: "bottom-center",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
+            await new Promise(r => setTimeout(r, 2750));
             props.setCurrent(props.current + 1)
         }
         else{
-            alert("bad answer")
+            toast.error('Wrong answer', {
+                position: "bottom-center",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                });
         }
       }
 
