@@ -55,7 +55,7 @@ export default function QuestionBox(props) {
                     45%
                   </div>
                 </div>
-                <div class="mb-8">
+                <div>
                   <button
                     id="btnA"
                     onClick={() => checkAnswer(props.answer1)}
@@ -85,14 +85,6 @@ export default function QuestionBox(props) {
                     D) {props.answer4}
                   </button>
 
-                  <div className="submit">
-                    <button
-                      className=" mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                      type="submit"
-                    >
-                      Potwierdź odpowiedź
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
