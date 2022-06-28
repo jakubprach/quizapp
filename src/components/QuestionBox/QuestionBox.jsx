@@ -1,11 +1,11 @@
 import React from 'react'
 export const QuestionBox = () => {
 
-    const questions  = [
-        {
-            id:1,
-            question:"x+2=4",
-            answer: 2
+const questions  = [
+    {
+        id:1,
+        question:"x+2=4",
+        answer: 2
     },
     {
         id:2,
@@ -29,11 +29,22 @@ export const QuestionBox = () => {
     },
     
     ]
+
+    let number = 0;
     
 
   return (
     <div className='container'>
-        <h1>{questions[0].question}</h1>
+        <h1>{questions[number].question}</h1>
+        <div className="answer1">
+
+        </div>
+        <div className="answer2">
+
+        </div>
+        <div className="answer3">
+            
+        </div>
     </div>
   )
 }
