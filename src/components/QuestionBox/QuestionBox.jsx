@@ -15,7 +15,6 @@ export default function QuestionBox(props) {
     })
     useEffect(() => {
       setBttnClass(() => letter => {
-           // console.log(Checked)
             if (Checked == letter) {
                 return('w-1/3 mx-4 bg-[#2b2d42] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
             } else {
@@ -23,6 +22,7 @@ export default function QuestionBox(props) {
             }
         })
       }, [Checked]);
+      
   const checkAnswer = async () => {
         setDisabled(true)
         if(Checked == props.answerCorrect){
@@ -59,7 +59,7 @@ export default function QuestionBox(props) {
     return (
       <div>
         {props.current == props.id && (
-          <div className="mx-auto w-1/2 container mt-[40px] bg-[#e5e5e5] rounded-[30px] ">
+          <div className="mx-auto w-2/3 container mt-[40px] bg-[#e5e5e5] rounded-[30px] ">
             <h6 className="pt-4">Pytanie {props.id} / 5</h6>
 
             <div className="p-8 pt-0">
