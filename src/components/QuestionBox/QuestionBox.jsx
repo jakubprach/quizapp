@@ -15,7 +15,7 @@ export default function QuestionBox(props) {
     useEffect(() => {
         setBttnClass(() => letter => {
             if (Checked == letter) {
-                return('w-1/3 mx-4 bg-yellow-500 hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
+                return('w-1/3mx-4 bg-yellow-500 hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
             } else {
                 return('w-1/3 mt-4  mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
             }
@@ -61,13 +61,7 @@ export default function QuestionBox(props) {
                 {props.question}
               </h1>
               <div class="mt-[40px]">
-                <div class="w-full bg-[#C3CAD5] rounded-full dark:bg-gray-700">
-                <div id ={props.idcss}
-                    class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
-                  >
-                    {props.barPercent}%
-                  </div>
-                </div>
+                
                 <div>
                   <button
                     id="A"
@@ -101,6 +95,13 @@ export default function QuestionBox(props) {
                     D) x = {props.answer4}
                   </button>
 
+                </div>
+                <div class="w-full bg-[#C3CAD5] rounded-full dark:bg-gray-700">
+                <div id ={props.idcss}
+                    class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                  >
+                    {props.barPercent}%
+                  </div>
                 </div>
               </div>
             </div>
