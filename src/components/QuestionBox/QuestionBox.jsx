@@ -28,7 +28,7 @@ export default function QuestionBox(props) {
         if(Checked == props.answerCorrect){
             toast.success('🦄 Wow so easy!', {
                 position: "bottom-center",
-                autoClose: 2000,
+                autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,
                 pauseOnHover: true,
