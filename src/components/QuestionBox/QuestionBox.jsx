@@ -11,14 +11,14 @@ export default function QuestionBox(props) {
     const [Checked, setChecked] = useState('')
     const [Disabled, setDisabled] = useState(false)
     const [bttnClass, setBttnClass] = useState(() => letter => {
-            return('w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
+            return('w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border ')
     })
     useEffect(() => {
       setBttnClass(() => letter => {
             if (Checked == letter) {
                 return('w-1/3 mx-4 bg-[#2b2d42] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
             } else {
-                return('w-1/3 mt-4 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900 disabled:opacity-25')
+                return('w-1/3 mt-4 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border disabled:opacity-25')
             }
         })
       }, [Checked]);
