@@ -8,25 +8,19 @@ export default function Quiz() {
     const [correct, setCorrect] = useState(0)
     const [current, setCurrent] = useState(1)
     return (
-        <div>
+      <div>
         {current !== 6 &&
-                    Questions.map((question) => (
-                        <QuestionBox
-                            key = {question.id}
-                            {...question}
-                            current={current}
-                            setCurrent={setCurrent}
-                            correct = {correct}
-                            setCorrect={setCorrect}
-                        />
-                ))
-        }
-        {
-                current == 6 &&
-                <Summary
-                    correct = {correct}
-                />
-        }
-    </div>
-);
+          Questions.map((question) => (
+            <QuestionBox
+              key={question.id}
+              {...question}
+              current={current}
+              setCurrent={setCurrent}
+              correct={correct}
+              setCorrect={setCorrect}
+            />
+          ))}
+        {current == 6 && <Summary correct={correct} />}
+      </div>
+    );
 }
