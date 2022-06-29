@@ -2,7 +2,7 @@ export const Questions = [
     {
         id:1,
         question:"x = 6/2(1+2)",
-        answerCorrect: 9,
+        answerCorrect: "C",
         answer1: 1,
         answer2: 5,
         answer3: 9,
@@ -13,7 +13,7 @@ export const Questions = [
     {
         id:2,
         question:"x = 9/3+9/3",
-        answerCorrect: 6,
+        answerCorrect: "D",
         answer1: 12,
         answer2: 9,
         answer3: 3,
@@ -25,7 +25,7 @@ export const Questions = [
     {
         id:3,
         question:"x = 616/7",
-        answerCorrect: 88,
+        answerCorrect: "C",
         answer1: 80,
         answer2: 79,
         answer3: 88,
@@ -36,7 +36,7 @@ export const Questions = [
     {
         id:4,
         question:"x = 513/9",
-        answerCorrect: 57,
+        answerCorrect: "B",
         answer1: 56,
         answer2: 57,
         answer3: 60,
@@ -47,7 +47,7 @@ export const Questions = [
     {
         id:5,
         question:"x = 276/4",
-        answerCorrect: 69,
+        answerCorrect: "A",
         answer1: 69,
         answer2: 70,
         answer3: 67,

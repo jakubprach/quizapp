@@ -9,20 +9,23 @@ export default function QuestionBox(props) {
 
 
     const [Checked, setChecked] = useState('')
+    const [Disabled, setDisabled] = useState(false)
     const [bttnClass, setBttnClass] = useState(() => letter => {
             return('w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
     })
     useEffect(() => {
-        setBttnClass(() => letter => {
+      setBttnClass(() => letter => {
+           // console.log(Checked)
             if (Checked == letter) {
                 return('w-1/3 mx-4 bg-yellow-500 hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
             } else {
-                return('w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900')
+                return('w-1/3 mx-4 bg-[#8d99ae] hover:bg-[#2b2d42] text-white font-bold py-2 px-4 rounded border border-slate-900 hover:border-indigo-900 disabled:opacity-25')
             }
         })
       }, [Checked]);
-    const checkAnswer = async (answer) => {
-        if(answer == props.answerCorrect){
+  const checkAnswer = async () => {
+        setDisabled(true)
+        if(Checked == props.answerCorrect){
             toast.success('🦄 Wow so easy!', {
                 position: "bottom-center",
                 autoClose: 2000,
@@ -46,9 +49,12 @@ export default function QuestionBox(props) {
                 draggable: true,
                 progress: undefined,
             });
+            await new Promise(r => setTimeout(r, 2750));
+            props.setCurrent(props.current + 1)
             
         }
       }
+      
 
     return (
       <div>
@@ -71,14 +77,16 @@ export default function QuestionBox(props) {
                 <div>
                   <button
                     id="A"
-                                    onClick={() => { setChecked('A'); checkAnswer(props.answer1); }}
+                    disabled={Disabled}
+                    onClick={() => { setChecked('A')}}
                     className={bttnClass('A')}
                   >
                     A) x = {props.answer1}
                   </button>
                   <button
-                  id="B"
-                                    onClick={() => { setChecked('B'); checkAnswer(props.answer2); }}
+                    id="B"
+                    disabled={Disabled}
+                    onClick={() => { setChecked('B')}}
                     className={bttnClass('B')}
                   >
                     B) x = {props.answer2}
@@ -87,20 +95,29 @@ export default function QuestionBox(props) {
 
                 <div className="mb-8">
                   <button
-                  id="C"
-                                    onClick={() => { setChecked('C');  checkAnswer(props.answer3);}}
+                    id="C"
+                    disabled={Disabled}
+                    onClick={() => { setChecked('C')}}
                     className={bttnClass('C')}
                   >
                     C) x = {props.answer3}
                   </button>
                   <button
-                  id="D"
-                                    onClick={() => { setChecked('D');  checkAnswer(props.answer4);}}
+                    id="D"
+                    disabled={Disabled}
+                    onClick={() => { setChecked('D')}}
                     className={bttnClass('D')}
                   >
                     D) x = {props.answer4}
                   </button>
-
+                  <div className="submit">
+                    <button
+                      className=" mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                      onClick={checkAnswer}
+                    >
+                      Potwierdź odpowiedź
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
