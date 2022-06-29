@@ -8,7 +8,7 @@ export const Questions = [
         answer3: 23,
         answer4: 25,
         idcss:"pytanie1",
-        barPercent:20
+        barPercent:""
     },
     {
         id:2,
@@ -19,7 +19,7 @@ export const Questions = [
         answer3: 180,
         answer4: 175,
         idcss:"pytanie2",
-        barPercent:40
+        barPercent:"20%"
 
     },
     {
@@ -31,7 +31,7 @@ export const Questions = [
         answer3: 105,
         answer4: 104,
         idcss:"pytanie3",
-        barPercent:60
+        barPercent:"40%"
     },
     {
         id:4,
@@ -42,7 +42,7 @@ export const Questions = [
         answer3: 32,
         answer4: 33,
         idcss:"pytanie4",
-        barPercent:80
+        barPercent:"60%"
     },
     {
         id:5,
@@ -53,7 +53,7 @@ export const Questions = [
         answer3: 32,
         answer4: 34,
         idcss:"pytanie5",
-        barPercent:100
+        barPercent:"80%"
     },
     
     ]
