@@ -106,7 +106,7 @@ export default function QuestionBox(props) {
                   </button>
                   <div className="submit">
                     <button
-                      className=" mt-10 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                      className=" mt-10 bg-[#8ac926] hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                       onClick={checkAnswer}
                     >
                       Potwierdź odpowiedź
