@@ -115,7 +115,7 @@ export default function QuestionBox(props) {
                 </div>
                 <div class="w-full bg-[#C3CAD5] rounded-full dark:bg-gray-700">
                 <div id ={props.idcss}
-                    class="bg-blue-600 h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
+                    class="bg-[#8ac926] h-4 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full"
                   >
                     {props.barPercent}
                   </div>
